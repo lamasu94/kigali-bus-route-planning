@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "154550636619",
+    "project_id": "kigali-bus-route-planner-2c2af",
+    "storage_bucket": "kigali-bus-route-planner-2c2af.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:154550636619:android:9092a1d73a45aa697c7dce",
+        "android_client_info": {
+          "package_name": "com.example.kigali_bus_route_planner"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlTAb0g3OVGVsYSs365oGX1F7UoXd6JYo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
