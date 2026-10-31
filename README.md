@@ -1,17 +1,14 @@
-# kigali_bus_route_planner
+# Kigali Bus Planner
 
-A new Flutter project.
+A Flutter application that helps users find bus routes in Kigali. It uses Firebase Authentication to sign users in and Cloud Firestore to store data under each user's unique ID, ensuring private user data is separated between accounts and changes appear live.
 
-## Getting Started
+## Screenshots
 
-This project is a starting point for a Flutter application.
+![login.png](screenshot/login.png)
 
-A few resources to get you started if this is your first Flutter project:
+![console.png](screenshot/console.png)
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+![live.png](screenshot/live.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![denied.png](screenshot/denied.png)
+
