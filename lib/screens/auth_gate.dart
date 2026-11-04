@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:provider/provider.dart';
+import '../repositories/bus_line_service.dart';
+import '../state/home_controller.dart';
 import 'login_screen.dart';
 import 'home_screen.dart';
 
@@ -19,11 +22,15 @@ class AuthGate extends StatelessWidget {
           );
         }
 
-        if (snapshot.hasData) {
-          return const HomeScreen();
+        final user = snapshot.data;
+        if (user == null) {
+          return const LoginScreen();
         }
 
-        return const LoginScreen();
+        return ChangeNotifierProvider<HomeController>(
+          create: (_) => HomeController(BusLineService(user.uid)),
+          child: const HomeScreen(),
+        );
       },
     );
   }
